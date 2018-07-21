@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idEmployee: 1
+  passwordEmployee: MyString
+  emailEmployee: MyString
+  nameEmployee: MyString
+  remainingLeave: MyString
+  : 1
+  adressEmployee: MyString
+  pictureEmployee: MyString
+  phoneEmployee: 1
+
+two:
+  idEmployee: 1
+  passwordEmployee: MyString
+  emailEmployee: MyString
+  nameEmployee: MyString
+  remainingLeave: MyString
+  : 1
+  adressEmployee: MyString
+  pictureEmployee: MyString
+  phoneEmployee: 1

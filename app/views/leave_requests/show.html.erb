@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Idrequest:</strong>
+  <%= @leave_request.idRequest %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @leave_request.startDate %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @leave_request.endDate %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @leave_request.reason %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @leave_request.status %>
+</p>
+
+<%= link_to 'Edit', edit_leave_request_path(@leave_request) %> |
+<%= link_to 'Back', leave_requests_path %>
