@@ -11,52 +11,46 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :idEmployee %>
-    <%= form.number_field :idEmployee %>
+    <%= form.number_field :idEmployee,:class => "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :passwordEmployee %>
     <%= form.text_field :passwordEmployee %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :emailEmployee %>
-    <%= form.text_field :emailEmployee %>
+    <%= form.text_field :emailEmployee,:class => "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :nameEmployee %>
-    <%= form.text_field :nameEmployee %>
+    <%= form.text_field :nameEmployee ,:class => "form-control"%>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :remainingLeave %>
-    <%= form.text_field :remainingLeave %>
+    <%= form.text_field :remainingLeave,:class => "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label : %>
-    <%= form.number_field : %>
-  </div>
+  
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :adressEmployee %>
-    <%= form.text_field :adressEmployee %>
+    <%= form.text_field :adressEmployee ,:class => "form-control"%>
   </div>
 
-  <div class="field">
-    <%= form.label :pictureEmployee %>
-    <%= form.text_field :pictureEmployee %>
-  </div>
+ 
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :phoneEmployee %>
-    <%= form.number_field :phoneEmployee %>
+    <%= form.number_field :phoneEmployee ,:class => "form-control"%>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit :class => "btn btn-primary"%>
   </div>
 <% end %>

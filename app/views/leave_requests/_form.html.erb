@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field" hidden>
     <%= form.label :idRequest %>
     <%= form.number_field :idRequest %>
   </div>
@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :endDate %>
-    <%= form.text_field :endDate %>
+    <%= form.datetime_select :endDate %>
   </div>
 
   <div class="field">
@@ -34,6 +34,11 @@
   <div class="field">
     <%= form.label :status %>
     <%= form.check_box :status %>
+  </div>
+
+ <div class="field">
+    <%= form.label :nameEmployee %>
+    <%= form.text_field :nameEmployee %>
   </div>
 
   <div class="actions">

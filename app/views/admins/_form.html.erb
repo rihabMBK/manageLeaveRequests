@@ -16,17 +16,15 @@
     <%= form.number_field :idAdmin %>
   </div>
 
-  <div class="field">
-    <%= form.label :passwordAdmin %>
-    <%= form.text_field :passwordAdmin %>
-  </div>
+  
 
   <div class="field">
-    <%= form.label :emailAdmin %>
-    <%= form.text_field :emailAdmin %>
+    <%= form.label :EMail %>
+    <%= form.text_field :email %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+      <%= form.submit :class => "btn btn-primary"%>
+
   </div>
 <% end %>
