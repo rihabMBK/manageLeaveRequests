@@ -6,7 +6,7 @@
 
   <thead>
     <tr>
-      <th>Name Employee</th>
+     
       <th>Startdate</th>
       <th>Enddate</th>
       <th>Action</th>
@@ -17,7 +17,7 @@
   <tbody>
     <% @leave_requests.each do |leave_request| %>
       <tr>
-        <td><%= leave_request.Employee.nameEmployee %></td>
+      
         <td><%= leave_request.startDate %></td>
         <td><%= leave_request.endDate %></td>
         <td><%= link_to 'Show', leave_request %></td>
