@@ -27,6 +27,7 @@ class LeaveRequestsController < ApplicationController
     @leave_request = LeaveRequest.new(leave_request_params)
 
     respond_to do |format|
+        
       if @leave_request.save
         format.html { redirect_to @leave_request, notice: 'Leave request was successfully created.' }
         format.json { render :show, status: :created, location: @leave_request }
@@ -69,6 +70,6 @@ class LeaveRequestsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def leave_request_params
-      params.require(:leave_request).permit(:idRequest, :startDate, :endDate, :reason, :status)
+      params.require(:leave_request).permit(:idRequest, :startDate, :endDate, :reason, :status, :idEmployee)
     end
 end

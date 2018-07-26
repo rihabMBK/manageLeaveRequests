@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_22_101958) do
+ActiveRecord::Schema.define(version: 2018_07_26_110618) do
 
   create_table "admins", force: :cascade do |t|
     t.integer "idAdmin"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 2018_07_22_101958) do
     t.string "rejectReason"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "idEmployee"
   end
 
 end

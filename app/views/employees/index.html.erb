@@ -10,7 +10,7 @@
       <th>Emailemployee</th>
       <th>Nameemployee</th>
       <th>Remainingleave</th>
-      <th></th>
+
       <th>Adressemployee</th>
 
       <th>Phoneemployee</th>
@@ -26,12 +26,14 @@
         <td><%= employee.emailEmployee %></td>
         <td><%= employee.nameEmployee %></td>
         <td><%= employee.remainingLeave %></td>
-        
+
         <td><%= employee.adressEmployee %></td>
         <td><%= employee.phoneEmployee %></td>
-        <td><%= link_to 'Show', employee %></td>
-        <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
-        <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><span class="glyphicon glyphicon-zoom-in"></span><%= link_to 'Show', employee %></td>
+
+        <td><i class="fa fa-edit"></i> <%= link_to 'Edit', edit_employee_path(employee) %></td>
+        <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %><span class="glyphicon glyphicon-trash"></span></td>
+
       </tr>
     <% end %>
   </tbody>

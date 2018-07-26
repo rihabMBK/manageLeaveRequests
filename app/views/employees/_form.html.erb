@@ -1,3 +1,4 @@
+<div class="col-md-6 col-md-offset-3">
 <%= form_with(model: employee, local: true) do |form| %>
   <% if employee.errors.any? %>
     <div id="error_explanation">
@@ -18,7 +19,7 @@
 
   <div class="form-group">
     <%= form.label :passwordEmployee %>
-    <%= form.text_field :passwordEmployee %>
+    <%= form.password_field :passwordEmployee %>
   </div>
 
   <div class="form-group">
@@ -36,14 +37,14 @@
     <%= form.text_field :remainingLeave,:class => "form-control" %>
   </div>
 
-  
+
 
   <div class="form-group">
     <%= form.label :adressEmployee %>
     <%= form.text_field :adressEmployee ,:class => "form-control"%>
   </div>
 
- 
+
 
   <div class="form-group">
     <%= form.label :phoneEmployee %>
@@ -51,6 +52,8 @@
   </div>
 
   <div class="actions">
-    <%= form.submit :class => "btn btn-primary"%>
+    <%= form.submit :class => "btn btn-success"%>
+
   </div>
 <% end %>
+</div>
