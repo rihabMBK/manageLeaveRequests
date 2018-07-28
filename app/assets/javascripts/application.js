@@ -16,5 +16,6 @@
 //= require bootstrap-sprockets
 
 //= require activestorage
-
+//= require angular
+//= require angular-resource
 //= require_tree .
